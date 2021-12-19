@@ -1,0 +1,21 @@
+body{
+        height: 100vh;
+}
+.wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+            height: 100%;
+
+
+}
+form{
+    border: solid black 3px;
+    border-radius: 5px ;
+    padding: 5px;
+}
+
+.input-box{
+    width: 500px;
+ margin-bottom: 20px;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <!-- Webpage Title -->
+    <title>회원가입</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- jquery, popper -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+
+    <!-- 구글폰트 -->
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel = "stylesheet" href="../static/join.css">
+
+    <!-- js -->
+    <script type="text/javascript" src="../static/join.js" defer="defer"></script>
+</head>
+<body>
+<div class="wrap">
+
+    <form class="column needs-validation" novalidate>
+        <h1>회원가입</h1>
+        <div class="row-md-4 input-box">
+            <label class="form-label">사용할 ID 입력해주세요.</label>
+            <input type="text" class="form-control" id="id-input" placeholder="아이디" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+        <div class="row-md-4 input-box">
+            <label class="form-label">PW 입력해주세요.</label>
+            <input type="text" class="form-control" id="pw-input" placeholder="패스워드" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+<!--           <div class="row-md-4 input-box">-->
+<!--            <label for="validationCustom02" class="form-label">PW 재확인</label>-->
+<!--            <input type="text" class="form-control" id="validationCustom02" placeholder="패스워드" required>-->
+<!--            <div class="valid-feedback">-->
+<!--                Looks good!-->
+<!--            </div>-->
+<!--        </div>-->
+
+        <div class="col-12">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                    Agree to terms and conditions
+                </label>
+                <div class="invalid-feedback">
+                    You must agree before submitting.
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <button onclick="postJoin()" class="btn btn-primary" type="submit">회원가입 하기</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
