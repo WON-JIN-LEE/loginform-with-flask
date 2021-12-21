@@ -20,10 +20,9 @@ def join_data_insert():
     id_receive = request.form["id_give"]
     pw_receive = request.form["pw_give"]
 
-    print(id_receive)
-    print(pw_receive)
     doc = {'id': id_receive,
            'pw': pw_receive}
+
     db.logindata.insert_one(doc)
 
     return jsonify({'msg': "회원가입이 완료되었습니다."})
